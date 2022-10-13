@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kreon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* List Syle */
+li{
+    list-style: none;
+}
+/* Scroll Behavior */
+html{
+    
+    scroll-behavior:smooth;
+}
+/* Color Variable */
+:root{
+    --white:#FFF;
+    --softwhite:#fafafa;
+    --lightwhite:#EBEDEE;
+    --lightpurple:#C282FA;
+    --ligghtvoilet:#6E61CA;
+    --darkwhite:#D8D8D8;
+    --skyblue:#88F7FE;
+    --blue:#66A6FF;
+    --black:#0a0a0a;
+    --darkblue:#040429;
+}
+/* Header Section */
+a{
+    text-decoration: none;
+    color: var(--darkblue);
+}
+h1,h2,h3,label,button{
+    font-family: 'Readex Pro', sans-serif;
+}
+h2{
+    font-family: 'Kreon', serif;
+    font-weight: 200;
+}
+/* Nav Section*/
+nav{
+    z-index: 999999;
+    height: 15%;
+    background-color: var(--softwhite);
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 8px#24262b;
+}
+.nav-links{
+    align-items: center;
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+.menu-btn{
+    display:none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 60%;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul li:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.menu-btn{
+    width: 30px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+    margin-right: 3%;
+}
+div .nav-logo{
+    display: flex;
+    align-items: center;
+}
+div .nav-logo-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-left: 5%;
+
+}
+
+/* Mani Section */
+
+  section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content:center;
+    flex-direction: column;
+  }
+  .container {
+    width: 80%;
+    max-width: 500px;
+    max-height: 500px;
+    padding: 20px;
+    margin-right: 5%;
+    margin-top: 3%;
+    box-shadow: 2px 2px 20px #582d2d10;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+  }
+  .form-group {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  button[type="submit"] {
+    width: 20%;
+    padding: 5px;
+    margin-top: 3%;
+    text-align: center;
+    font-size: medium;
+    border: 1px solid var(--darkblue);
+    cursor: pointer;
+    border-radius: 8px;
+
+  }
+  button[type="submit"]:hover {
+    transition: .3s;
+    background-color:var(--lightdarkblue);
+  }
+
+  .full-container{
+    display: flex;
+    height: 100%;
+    background-color:var(--white);
+    justify-content: space-around;
+    align-items: center;
+}
+.content{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: var(--lightblue);
+}
+.content h1{
+    font-size: 24px;
+    color: green;
+}
+.content h2{
+    font-size: 18px;
+    padding-left: 20px;
+}
+/* Footer Section */
+.footer{
+    background-color: var(--black);
+    padding: 20px;
+    color: var(--darkblue);
+    margin-top: 0;
+}
+.footer-row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.footer-col h4{
+    color: var(--white);
+    font-size: 14px;
+    font-family: 'Readex Pro', sans-serif;
+    text-align: left;
+    text-decoration: underline;
+    padding-bottom: 5px;
+
+}
+.footer-col ul{
+    text-align: left;
+    padding-left: 5px;
+}
+.footer-col a{
+    font-size: 12px;
+    text-transform:capitalize;
+    color: var(--white);
+}
+.footer-col li:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;  
+}
+
+/* Web Design By */
+.designed{
+    text-align: right;
+    word-spacing: 5px;
+    width: 100%;
+    background-color: black;
+}
+.designed h3{
+    padding: 5px;
+    color: var(--white);
+    font-size:10px;
+    margin-right: 5%;
+}
+
+.designed span{
+    color:var(--white);
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.social-links a{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-color: var(--white);
+	margin:0 7px 7px 0;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	color: var(--darkblue);
+	transition: all 0.5s ease;
+}
+.social-links a:hover{
+	color: #24262b;
+	background-color: var(--white);
+}
+
+
+
+/* Mobile View Using Media Query */
+
+@media only screen and (max-width: 1020px) {
+
+    section{
+        align-items:center;
+        justify-content:center;
+    }
+    .container{
+        margin-right: 3%;
+    }
+    button[type="submit"] {
+        width: 20%;
+        padding: 5px;
+        margin-top: 3%;
+        text-align: center;
+        font-size: medium;
+        border: 1px solid var(--darkblue);
+        cursor: pointer;
+        border-radius: 8px;
+    
+      }
+    
+}
+@media only screen and (max-width: 992px) {
+    nav ul{
+        width: 60%;
+    }
+
+    .full-container{
+        display: flex;
+        background-color:var(--white);
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        font-family: "Montserrat";
+        padding: 50px;
+        background-color: var(--lightblue);
+    }
+    .container{
+        margin-top: 3%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .nav-links{
+        width: 90%;
+    }
+    .line1,.line2,.line3{
+        z-index: 9999;
+        height: 15%;
+        width: 80%;
+        background-color: var(--darkblue);
+        margin-top: 3px;
+        border-radius: 5px;
+        transition: .6s ease-out;
+    }
+    .line1.act{
+        transform:rotate(-400deg) translate(-3px,5px);
+    }
+    .line2.act{
+        opacity: 0;
+    }
+    .line3.act{
+        transform:rotate(400deg) translate(-3px,-6px);
+    }
+    .mob-nav{
+        right: 0;
+        flex-direction: column;
+        justify-content:space-evenly;
+        position: fixed;
+        top: 0%;
+        width: 70%;
+        height: 100%;
+        font-size: 22px;
+        background-color: var(--softwhite);
+        text-align: center;
+        transform: translateX(100%);
+        cursor: pointer;
+	    transition: .6s;
+    }
+     a{
+	color:var(--darkblue);
+	}
+    .navdisp{
+        transform: translateX(0%);
+        transition: .6s;
+    }
+    nav{
+        height: 10%;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .nav-links{
+        height: 100%;
+    }
+    .content{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Montserrat";
+        padding: 30px;
+        background-color: var(--lightblue);
+    }
+    .full-container{
+        height: 100%;
+    }
+    .content h2,h3{
+        font-size: 14px;
+    }
+    .content h1{
+        font-size: 18px;
+    }
+    .form-group {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+      }
+      button[type="submit"] {
+        width: 20%;
+        font-size: 14px;
+        padding: 5px;
+      }
+}
+@media only screen and (max-width: 400px){
+    .footer-row{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:30px;
+    
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        margin-top: 5%;
+        padding: 20px;
+        font-size: 1em;
+    }
+    .full-container{
+        height: 100%;
+        
+    }
+    .content{
+        padding: 15px;
+    }
+    .container{
+        margin-right: 0;
+    }
+    .content h2,h3{
+        font-size: 12px;
+    }
+    .content h1{
+        font-size: 14px;
+    }
+    .form-group {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+      button[type="submit"] {
+        width: 40%;
+        font-size: 10px;
+        padding: 5px;
+      }
+
+
+}
