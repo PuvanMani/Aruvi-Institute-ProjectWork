@@ -22,8 +22,8 @@ html{
 /* Color Variable */
 :root{
     --white:#FFF;
-    --softwhite:#fafafa;
-    --lightwhite:#EBEDEE;
+    --softwhite:#f2fff0;
+    --lightwhite:#cfffcd;
     --lightpurple:#C282FA;
     --ligghtvoilet:#6E61CA;
     --darkwhite:#D8D8D8;
@@ -31,6 +31,7 @@ html{
     --blue:#66A6FF;
     --black:#0a0a0a;
     --darkblue:#040429;
+    --green: green;
     
 }
 /* Header Section */
@@ -120,11 +121,14 @@ div.content{
 }
 .main-title span{
     font-family: 'Readex Pro', sans-serif;
-    color:var(--softpink);
+    color:var(--darkblue);
+}
+.main-title span:hover,.main-title:hover{
     animation-name: title;
     animation-duration: 3s;
     animation-delay: 1s;
     animation-iteration-count:infinite;
+    cursor: default;
 }
 @keyframes title {
     0%  {color:var(--darkblue); left:200px; top:0px;}
@@ -174,12 +178,17 @@ div.content{
 
 .course-we-offered {
     font-size: 14px;
+    
+}
+.course-we-offered h1{
+    color: var(--green);
 }
 .course-details-row h3,.offline-classes-content h3,.workshops-content h3{
     font-size: 26px;
     text-align: center;
     margin-bottom: 3%;
     margin-top: 3%;
+    color: var(--green);
     
 }
 
@@ -258,6 +267,7 @@ div.content{
     align-items: center;
     background-color: var(--white);
     padding-bottom: 2.5em;
+    
    
 }
 .offline-classes-content,.workshops-content{
@@ -292,7 +302,7 @@ width: 100%;
 .footer{
     background-color: var(--black);
     padding: 20px;
-    color: var(--lightwhite);
+    color: var(--white);
     margin-top: 0;
 }
 .footer-row{
@@ -317,7 +327,7 @@ width: 100%;
     font-size: 12px;
     padding-left: 5px;
     text-transform:capitalize;
-    color: var(--lightwhite);
+    color: var(--darkwhite);
 }
 .footer-col li:hover{
     transform: scale(1.1);

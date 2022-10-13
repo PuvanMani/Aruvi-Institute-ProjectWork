@@ -19,8 +19,8 @@ html{
 /* Color Variable */
 :root{
     --white:#FFF;
-    --softwhite:#fafafa;
-    --lightwhite:#EBEDEE;
+    --softwhite:#f2fff0;
+    --lightwhite:#cfffcd;
     --lightpurple:#C282FA;
     --ligghtvoilet:#6E61CA;
     --darkwhite:#D8D8D8;
@@ -28,6 +28,7 @@ html{
     --blue:#66A6FF;
     --black:#0a0a0a;
     --darkblue:#040429;
+    --green: green;
 }
 /* Header Section */
 a{
@@ -97,7 +98,8 @@ div .nav-logo-text{
     padding: 5px;
     margin-top: 2%;
     text-align: center;
-    background-color: var(--darkwhite);
+    background-color: var(--lightwhite);
+    color: var(--green);
 }
 .pic-container{
     padding: 30px;  

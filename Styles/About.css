@@ -20,8 +20,8 @@ html{
 /* Color Variable */
 :root{
     --white:#FFF;
-    --softwhite:#fafafa;
-    --lightwhite:#EBEDEE;
+    --softwhite:#f2fff0;
+    --lightwhite:#cfffcd;
     --lightpurple:#C282FA;
     --ligghtvoilet:#6E61CA;
     --darkwhite:#D8D8D8;
@@ -29,6 +29,7 @@ html{
     --blue:#66A6FF;
     --black:#0a0a0a;
     --darkblue:#040429;
+    --green: green;
 }
 /* Header Section */
 a{
@@ -113,10 +114,12 @@ div .nav-logo-text{
 }
 .about-us,.about-vision{
     padding: 20px;
-    background-color: var(--lightpink);
+
 }
 .about h2{
-    background-color: var(--darkwhite);
+    background-color: var(--lightwhite);
+    color: var(--green);
+    padding: 5px;
     text-transform: uppercase;
     text-align: center;
 }

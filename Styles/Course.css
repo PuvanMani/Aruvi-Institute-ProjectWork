@@ -19,8 +19,8 @@ html{
 /* Color Variable */
 :root{
     --white:#FFF;
-    --softwhite:#fafafa;
-    --lightwhite:#EBEDEE;
+    --softwhite:#f2fff0;
+    --lightwhite:#cfffcd;
     --lightpurple:#C282FA;
     --ligghtvoilet:#6E61CA;
     --darkwhite:#D8D8D8;
@@ -28,6 +28,7 @@ html{
     --blue:#66A6FF;
     --black:#0a0a0a;
     --darkblue:#040429;
+    --green: green;
     
 }
 /* Header Section */
@@ -99,7 +100,7 @@ div .nav-logo-text{
       text-align: center;
       margin-top: 20px;
       margin-bottom: 24px;
-      color: var(--darkblue);
+      color: var(--green);
       font-family: 'Poppins', sans-serif;
       background-color: var(--lightwhite);
       width: 100%;
@@ -170,7 +171,7 @@ div .nav-logo-text{
       transition-delay: 1s;
   }
   .cont h2{
-      color: black;
+      color: var(--green);
   }
   /* Footer Section */
 .footer{
