@@ -1,44 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Chat app Code-->
-<script>
-    "use strict";
-    
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('g4kbmrvc7kg9');
-    </script>
-
-    <!-- End of Chat app Code -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link src="Image/favicon.ico" rel="icon" type="image/x-icon" >
+    <link rel="icon" type="image/png" href="Image/Aruvilogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="Styles/Contact.css" rel="stylesheet" >
     <title>Aruvi Institute</title>
 </head>
 <body>
+    <script src="js/Contact.js"></script>
     <!-- Header Section -->
     <nav>
         <div class="nav-links">
@@ -87,20 +59,20 @@
         </div>
         <section>
             <div class="container">
-              <form onsubmit=" reset(); return false;">
+              <form action="mailto:puvanrainayt@gmail.com"  method="post" enctype="text/plain" >
           
                 <div class="form-group">
-                  <label for="firstName"> First Name</label>
+                  <label for="firstName"> First Name <sup style="color: red;">*</sup></label>
                   <input type="text" id="firstName" name="firstName">
 
-                  <label for="latsName">Last Name</label>
+                  <label for="latsName">Last Name <sup style="color: red;">(Optional)</sup></label>
                   <input type="text" id="lastName" name="lastName">
 
-                  <label for="email">Email</label>
+                  <label for="email">Email <sup style="color: red;">*</sup></label>
                   <input type="email" id="email" name="email">
           
 
-                  <label for="massage">Message</label>
+                  <label for="massage">Message <sup style="color: red;">*</sup></label>
                   <textarea name="massage" id="massage" cols="30" rows="5"></textarea>
           
                 <button type="submit" onclick="check();">Submit</button>
@@ -141,10 +113,10 @@
             <div class="footer-col">
                 <h4>COURSE</h4>
                 <ul>
-                    <li><a href="#">python</a></li>
-                    <li><a href="#">Data Science</a></li>
-                    <li><a href="#">Tkinter</a></li>
-                    <li><a href="#">Web Devlopment</a></li>
+                    <li><a href="Course.html">python</a></li>
+                    <li><a href="Course.html">Data Science</a></li>
+                    <li><a href="Course.html">Tkinter</a></li>
+                    <li><a href="Course.html">Web Devlopment</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -166,31 +138,6 @@
 <div class="designed">
     <h3>Web Designed <a href="https://www.instagram.com/mr_white_spirit_/" target="_blank"><span>Puvan</span></a></h3>
   </div>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="js/js.js"></script>
-<script>
-    function check(){
-        var fname=document.getElementById('firstName').value;
-        var lname=document.getElementById('lastName').value;
-        var email=document.getElementById('email').value;
-        var message=document.getElementById('massage').value;
-
-        if (fname=='' || lname=='' || email=='' || message==''){
-            alert('Please Fill All box')
-        }
-
-        else{
-        var From = document.getElementById('email').value;
-        var Subject = "New Contact From Enquery";
-        var Body = "Name : " +fname +" Last Name : "+ lname +" Email : "+ email +" Message : "+ message;
-        alert("Sucessfully Sended !!")
-
-    }
-
-    }
-    
-
-</script>
-
 </body>
 </html>

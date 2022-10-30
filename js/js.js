@@ -10,5 +10,3 @@ button.addEventListener("click",function(){
     line2.classList.toggle("act")
     line3.classList.toggle("act")
 })
-    
-

@@ -1,39 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Chat app Code-->
-<script>
-  "use strict";
-  
-  !function() {
-    var t = window.driftt = window.drift = window.driftt || [];
-    if (!t.init) {
-      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-      t.factory = function(e) {
-        return function() {
-          var n = Array.prototype.slice.call(arguments);
-          return n.unshift(e), t.push(n), t;
-        };
-      }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-      }), t.load = function(t) {
-        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
-        i.parentNode.insertBefore(o, i);
-      };
-    }
-  }();
-  drift.SNIPPET_VERSION = '0.3.1';
-  drift.load('g4kbmrvc7kg9');
-  </script>
-
-  <!-- End of Chat app Code -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link src="Image/favicon.ico" rel="icon" type="image/x-icon" >
+    <link rel="icon" type="image/png" href="Image/Aruvilogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="Styles/Gallery.css" rel="stylesheet" >
     <title>Aruvi Institute</title>
@@ -66,108 +37,170 @@
 
     <!-- Content Section -->
 
-<h1 class="title">Photo Gallery</h1>
-<div class="main-container">
-    <div class="pic-container">
-        <div class="bg">
-            <img class="photo harizondal" src="Image/Gallery/1.jpg" alt="pic">
-          </div>
-          <div class="bg">
-            <img class="photo harizondal" src="Image/Gallery/2.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo harizondal" src="Image/Gallery/3.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo harizondal" src="Image/Gallery/4.jpg" alt="">
-          </div>
-          <div class="bg photo-vertical">
-            <img class="photo" src="Image/Gallery/5.jpg" alt="">
-          </div>
-          <div class="bg  photo-vertical">
-            <img class="photo" src="Image/Gallery/6.jpg" alt="">
-          </div>
-          <div class="bg photo-vertical">
-            <img class="photo" src="Image/Gallery/7.jpg" alt="">
-          </div>
-          <div class="bg photo-vertical">
-            <img class="photo" src="Image/Gallery/8.jpg" alt="pic">
-          </div>
-          <div class="bg photo-vertical">
-            <img class="photo" src="Image/Gallery/9.jpg" alt="">
-          </div>
-          <div class="bg photo-vertical">
-            <img class="photo" src="Image/Gallery/10.jpg" alt="">
-          </div>
-          <div class="bg photo-vertical">
-            <img class="photo" src="Image/Gallery/11.jpg" alt="">
-          </div>
-          <div class="bg photo-vertical">
-            <img class="photo" src="Image/Gallery/12.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/13.jpg" alt="pic">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/14.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/15.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/16.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/17.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/18.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/19.jpg" alt="pic">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/20.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/21.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/22.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/23.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/24.jpg" alt="pic">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/25.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/26.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/27.jpg" alt="">
-          </div>
-          <div class="bg ">
-            <img class="photo" src="Image/Gallery/28.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/29.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/30.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo" src="Image/Gallery/32.jpg" alt="">
-          </div>
-          <div class="bg">
-            <img class="photo harizondal" src="Image/Gallery/33.jpg" alt="">
-          </div>
-    </div>
-</div>
-    
+    <h1>Aruvi Institute Gallery</h1>
+    <section class="photo-grid-container">
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/BBB.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/CCC.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img class="span"src="Image/Gallery/EEE.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/1.jpg" alt="" />
+      </div>
+      
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/15.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/10.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/11.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/12.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/13.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/14.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/AAA.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/16.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/17.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/18.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/19.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/2.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/20.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/21.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/22.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/23.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/24.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/25.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/26.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/27.jpg" alt="" />
+      </div>
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/28.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/29.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/3.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/30.jpg" alt="" />
+      </div>
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/31.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/32.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/33.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/4 (2).jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/4.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/5.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/6.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/7.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/8.jpg" alt="" />
+      </div>
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/9.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/about.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/work1.jpg" alt="" />
+      </div>
+
+      <div class="photo-grid-item">
+        <img src="Image/Gallery/work2.jpg" alt="" />
+      </div>
+    </section>
+
 <hr>  
     <!-- Footer Section  -->
 

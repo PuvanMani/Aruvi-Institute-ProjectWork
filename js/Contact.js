@@ -1,18 +1,19 @@
-function SendEmail(){
-    Email.Send({
-        Host: "smtp.gmail.com"
-        UserName : "puvanrainayt@gmail.com"
-        Password : "Puvanraina03"
-        To : "puvanraina03@gmail.com"
-        From : document.getElementById('email').value
-        Subject : "New Contact From Enquery"
-        Body : "Name : " + document.getElementById('firstName').value
-        +"<br> Last Name : "+ document.getElementById('lastName').value
-        +"<br> Email : "+ document.getElementById('email').value
-        +"<br> Message : "+ document.getElementById('massage').value
 
-    }).then{
-        message=> alert("Message Was Send Succesfully !!")
-    }
-   
+function check(){
+var fname=document.getElementById('firstName').value;
+var lname=document.getElementById('lastName').value;
+var email=document.getElementById('email').value;
+var message=document.getElementById('massage').value;
+if (fname==''&& email=='' && message==''){
+    alert('Please Fill All box')
+}
+if (fname==''){
+    alert("Enter Your Name")
+}
+else if (email==''){
+    alert("Enter Your Email")
+}
+else if (message==''){
+    alert("Enter Your Message")
+}
 }

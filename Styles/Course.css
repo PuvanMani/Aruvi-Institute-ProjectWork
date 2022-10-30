@@ -182,12 +182,15 @@ div .nav-logo-text{
 }
 .footer-row{
     display: flex;
+    margin: auto;
     width: 100%;
-    flex-wrap: wrap;
     justify-content: space-around;
-
+}
+.footer-col{
+    margin-top: 20px;
 }
 .footer-col h4{
+    letter-spacing: 2px;
     font-size: 14px;
     text-align: left;
     text-decoration: underline;
@@ -195,13 +198,19 @@ div .nav-logo-text{
 
 }
 .footer-col ul{
+    display: flex;
+    flex-wrap: wrap;
     text-align: left;
     padding: 5px;
 }
 .footer-col a{
+    padding-left: 10px;
     font-size: 12px;
     text-transform:capitalize;
     color: var(--white);
+}
+.social-links a{
+padding-left: 0;
 }
 .footer-col li:hover{
     transform: scale(1.1);
@@ -249,10 +258,6 @@ div .nav-logo-text{
 
 /* Mobile View Using Media Query */
 
-@media only screen and (max-width: 1020px) {
-    
-    
-}
 @media only screen and (max-width: 992px) {
     nav ul{
         width: 60%;
@@ -315,8 +320,13 @@ div .nav-logo-text{
     .nav-links{
         height: 100%;
     }
-    .footer{
-        padding: 0px;
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
