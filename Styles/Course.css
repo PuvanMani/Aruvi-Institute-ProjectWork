@@ -192,7 +192,7 @@ div .nav-logo-text{
 .footer-col h4{
     letter-spacing: 2px;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     text-decoration: underline;
     padding-bottom: 5px;
 
@@ -232,9 +232,9 @@ padding-left: 0;
 }
 
 .designed span{
-    color:var(--white);
+    color:red;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
 }
 .social-links a{
@@ -327,6 +327,7 @@ padding-left: 0;
         width: 80%;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
 }

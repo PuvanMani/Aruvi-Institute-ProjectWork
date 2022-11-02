@@ -127,7 +127,7 @@ div .nav-logo-text{
 .contactbtn button{
     padding: 10px;
     width: 30%;
-    color: var(--darkblue);
+    color: var(--black);
     background-color:var(--lightwhite);
     border: 1px solid var(--black);
     border-radius: 6px;
@@ -164,7 +164,7 @@ iframe{
 .footer-col h4{
     letter-spacing: 2px;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     text-decoration: underline;
     padding-bottom: 5px;
 
@@ -204,9 +204,9 @@ padding-left: 0;
 }
 
 .designed span{
-    color:var(--white);
+    color:red;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
 }
 .social-links a{
@@ -270,6 +270,7 @@ padding-left: 0;
         width: 80%;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 700px){
@@ -331,9 +332,14 @@ padding-left: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         font-family: "Montserrat";
         padding: 30px;
         background-color: var(--lightblue);
+    }
+    .content h2{
+        font-size: 18px;
+        padding-left: 0;
     }
     .full-container{
         height: 100%;
@@ -341,9 +347,14 @@ padding-left: 0;
     }
     .content h2,h3{
         font-size: 14px;
+        text-align: center;
     }
     .content h1{
+        text-align: center;
         font-size: 18px;
+    }
+    .web{
+        text-align: right;
     }
       .footer-row{
         display: flex;
@@ -352,10 +363,15 @@ padding-left: 0;
         width: 80%;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
     .about-img iframe{
         min-width:100px;
         min-height: 100px;
+    }
+    .contactbtn button{
+        padding: 10px;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 400px){

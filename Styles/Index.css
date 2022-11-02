@@ -316,7 +316,7 @@ width: 100%;
 .footer-col h4{
     letter-spacing: 2px;
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     text-decoration: underline;
     padding-bottom: 5px;
 
@@ -324,7 +324,7 @@ width: 100%;
 .footer-col ul{
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
+    text-align: center;
     padding: 5px;
 }
 .footer-col a{
@@ -334,7 +334,7 @@ width: 100%;
     color: var(--white);
 }
 .social-links a{
-padding-left: 0;
+    padding-left: 0;
 }
 .footer-col li:hover{
     transform: scale(1.1);
@@ -356,9 +356,9 @@ padding-left: 0;
 }
 
 .designed span{
-    color:var(--white);
+    color:red;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
 }
 .social-links a{
@@ -538,7 +538,9 @@ padding-left: 0;
         width: 80%;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
+    
 }
 @media only screen and (max-width: 400px){
     section div.landing{
