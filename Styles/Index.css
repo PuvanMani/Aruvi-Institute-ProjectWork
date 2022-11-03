@@ -78,7 +78,7 @@ nav ul{
     font-family: 'Poppins', sans-serif;
 }
 nav ul li:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .3s;
 }
 
@@ -209,7 +209,6 @@ div.content{
     padding: 10px;
     font-size: 16px;
     text-align: justify;
-    text-transform: capitalize;
 }
 
 .course-list{
@@ -279,7 +278,7 @@ div.content{
     background-color: var(--lightwhite);
 }
 .offline-classes-img{
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 10px;
 }
 .offline-classes img{
@@ -374,7 +373,8 @@ width: 100%;
 	transition: all 0.5s ease;
 }
 .social-links a:hover{
-	color: #24262b;
+    color:var(--white);
+	background-color: #4444ff;
 }
 
 
@@ -487,7 +487,7 @@ width: 100%;
         top: 0%;
         width: 50%;
         height: 50%;
-        font-size: 22px;
+        font-size: 16px;
         background-color: var(--softwhite);
         text-align: center;
         transform: translateX(100%);
