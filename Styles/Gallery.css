@@ -81,6 +81,7 @@ nav ul li:hover{
 div .nav-logo{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 div .nav-logo-text{
     font-family: 'Readex Pro', sans-serif;
@@ -204,20 +205,13 @@ padding-left: 0;
 
 /* Mobile View Using Media Query */
 
-@media only screen and (max-width: 1020px) {
-    
-    
-}
 @media only screen and (max-width: 992px) {
     nav ul{
         width: 60%;
     }
 
 }
-@media only screen and (max-width: 860px) {
- 
 
-}
 @media only screen and (max-width: 700px){
     nav{
         z-index: 9999999;
@@ -320,5 +314,9 @@ padding-left: 0;
         overflow: hidden;
         border-radius: 10px;
     }
+    .nav-logo-img{
+        display: none;
+    }
 
 }
+
