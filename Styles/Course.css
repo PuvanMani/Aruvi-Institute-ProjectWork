@@ -160,6 +160,12 @@ h1{
 .card:nth-child(6) .card-image{
     background-image: url(../Image/full.jpg);
 }
+.card:nth-child(7) .card-image{
+    background-image: url(../Image/c-logo.png);
+}
+.card:nth-child(8) .card-image{
+    background-image: url(../Image/java-logo.png);
+}
 .card:hover{
     background: var(--lightgreen);
     color: rgb(2, 71, 2);
